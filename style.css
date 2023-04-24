@@ -1,0 +1,17 @@
+html {
+  background: linear-gradient(45deg, rgb(127, 71, 154) 20%, rgb(87, 154, 156));
+} 
+
+.lemoncat{
+  transform: scale3d(1.0, 1.0, 1.0);
+  transition: 1.5s;
+  user-select: none;
+  color: #faaa41;
+  color: rgba(250, 170, 65, 0.0);
+  font-size: 36pt;
+}
+
+.lemoncat:hover{
+  color: rgba(250, 170, 65, 1.0);
+  transform: scale3d(3.0, 0.8, 1.0);
+}
