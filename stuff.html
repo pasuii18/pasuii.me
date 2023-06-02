@@ -23,21 +23,64 @@
   <h1 align="center">laboratory x-16</h1>
   <p align = right style="color: #eba4d0; filter: drop-shadow(0 0 10px #eba4d0)">пиши сам себе стили умник хуев</p>
   <style style="font-size: 12pt; color: #eba4d0; display: block; white-space: pre; transition: 1s all; margin-left: 70%; border: 1px solid #eba4d0; border-radius: 10pt;" contenteditable>
-    html {
-	    background: rgb(28,28,28);
-      max-width: 100%;
-    } 
-    body {
-	    font-family: 'Tsukimi Rounded', sans-serif;
-      padding: 32px;
-      color: white;
-	    margin-left: 10%;
-	    margin-right: 10%;
-    }
-    a{
-	    text-decoration: none;
-	    color: transparent;
-    }
+    @import url(https://fonts.googleapis.com/css?family=Cantarell:400,700italic);
+
+/*MAIN*/
+html {
+	background: rgb(28,28,28);
+	max-width: 100%;
+} 
+body {
+	font-family: 'Tsukimi Rounded', sans-serif;
+    padding: 32px;
+    color: white;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+a{
+	text-decoration: none;
+	color: transparent;
+}
+
+/*ANIMATION*/
+h1 {
+	color: #1c1c1c;
+	font-family: 'Cantarell', sans-serif;
+	font-size: 84pt;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	-webkit-text-stroke: 6px #eba4d0;
+	animation: name 3.5s ease-out infinite;
+  }
+@keyframes name {
+	15% {
+	  margin-left: 0;
+	  text-shadow: none;
+	}
+	45%, 55% {
+	  margin-left: 1.25em;
+	  -webkit-text-stroke: 6px #FFF;
+	  text-shadow:
+	  -4px 0 #fff,
+	  -8px 0 #f7e6f1,
+	  -12px 0 #ebcfe0,
+	  -16px 0 #e0c2d4,
+	  -20px 0 #e2c5d6,
+	  -24px 0 #e0bed3,
+	  -28px 0 #e0c4d5,
+	  -32px 0 #e7cddd,
+	  -36px 0 #f0c7e0,
+	  -40px 0 #e7bad4,
+	  -44px 0 #ecbdd9,
+	  -48px 0 #e7afd0,
+	  -52px 0 #e9afd2,
+	  -56px 0 #ecacd2,
+	  -60px 0 #eca7d1,
+	  -64px 0 #eba4d0;
+	}
+  }
   </style>
 
  </body>
