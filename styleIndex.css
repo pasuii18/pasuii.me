@@ -32,7 +32,7 @@ a{
 }
 .about{
 	padding: 0;
-	font-family: 'Monomaniac One', sans-serif;
+	font-family: 'Tsukimi Rounded', sans-serif;
 	right: 0;
 	text-align: center;
 	position: relative;
@@ -60,8 +60,7 @@ a{
 	border-right: 1px solid var(--logo);
 	border-left: 1px solid var(--logo);
 	border-radius: 10pt;
-
-	-webkit-text-stroke: 1px var(--logo);
+	
 	opacity: 0%;
 }
 .about:hover::before{
