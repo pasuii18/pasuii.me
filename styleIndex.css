@@ -14,6 +14,12 @@ a{
 	text-decoration: none;
 	color: transparent;
 }
+hr{
+    height: 1px;
+    border-width: 0;
+    color: #c68bba;
+    background-color: #c68bba;
+}
 
 /*ABOUT*/
 .textAbout{
@@ -60,7 +66,7 @@ a{
 	border-right: 1px solid var(--logo);
 	border-left: 1px solid var(--logo);
 	border-radius: 10pt;
-	
+
 	opacity: 0%;
 }
 .about:hover::before{
@@ -303,3 +309,46 @@ h1 {
         color: #eba4d0;
       }
 }
+
+.sectionsName
+{
+    text-align: center; 
+    color: #c68bba; 
+    font-size: 32pt; 
+    filter: drop-shadow(0 0 8px #9168ac);
+}
+
+.projectLink
+{
+    font-size: 26pt; 
+  color: #c68bba;
+  filter: drop-shadow(0px 0px 2px rgba(255, 143, 221));
+  transition: 1s;
+  text-decoration: none;
+
+  background-image: linear-gradient(
+    -225deg,
+    #ff8fdd 0%,
+    #fab1e4 29%,
+    #f3cee8 67%,
+    #ff8fdd 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+.projectLink:hover
+{
+  scale: 1.1;
+}
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
