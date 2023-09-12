@@ -1,24 +1,20 @@
 /*MAIN*/
-html 
-{
-	background: rgb(28,28,28);
-	max-width: 100%;
+html {
+    background: rgb(28,28,28);
+  max-width: 100%;
 } 
-body 
-{
+body {
 	font-family: 'Tsukimi Rounded', sans-serif;
-	padding: 32px;
-	color: white;
+    padding: 32px;
+    color: white;
 	margin-left: 10%;
 	margin-right: 10%;
 }
-a
-{
+a{
 	text-decoration: none;
 	color: transparent;
 }
-hr
-{
+hr{
     height: 1px;
     border-width: 0;
     color: #c68bba;
@@ -26,8 +22,7 @@ hr
 }
 
 /*HEADERS*/
-header img
-{
+header img {
     height: 250px;
     width: 250px;
     border-radius: 30%;
@@ -36,8 +31,7 @@ header img
     transition: ease-out .2s;
 	animation: 4.5s ease-out 0s infinite alternate-reverse logo_resize;
 }
-@keyframes logo_resize 
-{
+@keyframes logo_resize {
 	from {
 		border-radius: 25%;
 	}
@@ -45,12 +39,10 @@ header img
 	  border-radius: 40%;
 	}
   }
-header img:hover
-{
+header img:hover{
     transform: scale3d(1.1, 0.9, 2.0);
 }
-header p 
-{
+header p {
 	font-size: 24px;
     filter: drop-shadow(0 0 5px #eba4d0); 
 	color: #c58ac0;
@@ -102,16 +94,13 @@ header p
   width: 40px;
   height: 40px;
 }
-.links .linkDiv:hover
-{
+.links .linkDiv:hover{
   transform: scale(1.2);
 }
-.links h2:hover
-{
+.links h2:hover{
   transform: scale(1.2);
 }
-.progLang
-{
+.progLang{
   text-align: center; 
   color: #FFFFFF; 
   font-size: 22pt; 
@@ -119,14 +108,12 @@ header p
 }
 
 /*NAME ANIMATION*/
-h1 
-{
+h1 {
     font-size: 24pt;
     letter-spacing: 3px;
     animation: name 5.5s ease-out infinite;
 }
-@keyframes name 
-{
+@keyframes name {
     
     10% {
       margin-left: 0;
@@ -195,8 +182,7 @@ font-size: 26pt;
   }
 
 /*ABOUT*/
-.about
-{
+.about{
     text-align: center;
     
 	font-size: 32pt;
@@ -209,4 +195,78 @@ font-size: 26pt;
 
     border: 1px solid #c68bba;
     border-radius: 15px;
+}
+
+@media screen and (max-width: 450px)
+{
+  body {
+    padding: 32px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  header img 
+  {
+    height: 200px;
+    width: 200px;
+  }
+  header p 
+  {
+    font-size: 20px;
+  }
+  
+  /*LINKS*/
+  .links
+  {
+    gap: 40px;
+  }
+  .links h2
+  {
+    font-size: 12pt;
+    margin-top: 2px;
+  }
+  .links .linkDiv
+  {
+    height: 60px;
+    width: 150px;
+  
+    border-radius: 5px;
+  }
+  .links .linkDiv img
+  {
+    width: 20px;
+    height: 20px;
+  }
+  .progLang{
+    font-size: 14pt;
+  }
+  
+  /*NAME ANIMATION*/
+  h1 
+  {
+      font-size: 20pt;
+      letter-spacing: 2px;
+  }
+  .sectionsName
+  {
+      font-size: 24pt; 
+  }
+  
+  /*PROJECTS*/
+  .projectLink
+  {
+    font-size: 18pt; 
+    margin: 10px;
+  }
+  
+  /*ABOUT*/
+  .about
+  {
+    font-size: 18pt;
+  
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
 }
