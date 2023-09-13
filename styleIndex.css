@@ -270,3 +270,14 @@ font-size: 26pt;
     padding: 10px;
   }
 }
+
+@media screen and (max-width: 400px)
+{
+.links .linkDiv
+  {
+    height: 60px;
+    width: 120px;
+  
+    border-radius: 5px;
+  }
+}
